@@ -28,9 +28,9 @@ const Stage = ({ stage, index, stagesLength }) => (
 
 const OrderStatusProgressBar = ({ stages }) => {
   return (
-    <div className="w-[95%] h-40 bg-white shadow-lg p-8 m-8">
+    <div className="w-full md:w-[95%] h-40 bg-white shadow-lg p-8 m-8">
       <Origin />
-      <div className="bg-green-700 rounded-lg p-1 mx-64 relative">
+      <div className="bg-green-700 rounded-lg p-1 mx-4 md:mx-68 relative">
         {stages.map((stage, index) => (
           <Stage stage={stage} index={index} stagesLength={stages.length} />
         ))}
